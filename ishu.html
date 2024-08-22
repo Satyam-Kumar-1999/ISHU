@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poem for Ishani</title>
+    <style>
+        :root {
+            --background-color: #2c2c2c;
+            --container-background-color: #3a3a3a;
+            --text-color: #f8f8f8;
+            --heading-color: #e63946;
+            --paragraph-background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* White Theme */
+        .white-theme {
+            --background-color: #f9f9f9;
+            --container-background-color: #fff;
+            --text-color: #333;
+            --heading-color: #d63384;
+            --paragraph-background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--container-background-color);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: var(--heading-color);
+        }
+
+        .paragraph {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            height: 200px; /* Increased height for better image fit */
+            background-color: var(--paragraph-background-color);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .paragraph img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            opacity: 0.95;
+            transition: transform 0.3s ease; /* Transition for smooth hover effect */
+        }
+
+        .paragraph img:hover {
+            transform: scale(1.2); /* Enlarges the image on hover */
+        }
+
+        .paragraph:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .paragraph:nth-child(even) img {
+            margin-left: 20px;
+            margin-right: 0;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.2em;
+            text-align: justify;
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.2em;
+            color: var(--heading-color);
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: var(--heading-color);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .theme-toggle:hover {
+            background-color: darken(var(--heading-color), 10%);
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <button class="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
+    <div class="container">
+        <h1>For My Dearest Ishani</h1>
+
+        <div class="paragraph">
+            <img src="image1.jpg" alt="Ishani Photo 1">
+            <p>In Asansol, where the sun does rise,<br>
+            A city blessed, where beauty lies,<br>
+            Not in the streets or skies above,<br>
+            But in the heart of the one I love.</p>
+        </div>
+
+        <div class="paragraph">
+            <img src="image2.jpg" alt="Ishani Photo 2">
+            <p>Ishani, with grace, the ground she treads,<br>
+            Turns mundane paths to golden threads,<br>
+            For Asansol is worthy, true and bright,<br>
+            Because she breathes its air, day and night.</p>
+        </div>
+
+        <div class="paragraph">
+            <img src="image3.jpg" alt="Ishani Photo 3">
+            <p>Baskin Robbins, a simple delight,<br>
+            Becomes divine with her every bite,<br>
+            For in her hands, the flavors bloom,<br>
+            And in her smile, the world's perfume.</p>
+        </div>
+
+        <div class="paragraph">
+            <img src="image4.jpg" alt="Ishani Photo 4">
+            <p>No sight is grand, no touch so sweet,<br>
+            Until Ishani's presence makes it complete,<br>
+            She is like a goddess, pure and kind,<br>
+            An angel on earth, in heart and mind.</p>
+        </div>
+
+        <div class="paragraph">
+            <p>Her scent, a whisper, I can't resist,<br>
+            Her neck, a temptation, I can't desist,<br>
+            Addicted am I, to all she gives,<br>
+            For in her light, my soul truly lives.</p>
+        </div>
+
+        <div class="paragraph">
+            <img src="image5.jpg" alt="Ishani Photo 5">
+            <p>Ishani, a pure soul, the finest I've seen,<br>
+            In her reflection, the world turns serene,<br>
+            Satyam Bharadwaj loves her, beyond all measure,<br>
+            For she is his life, his greatest treasure.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Made with ♥ by Litloo 💋
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('white-theme');
+        }
+    </script>
+</body>
+</html>
